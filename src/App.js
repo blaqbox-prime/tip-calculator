@@ -1,4 +1,5 @@
 import './App.css';
+import Calculator from './components/Calculator';
 
 function App() {
   return (
@@ -6,6 +7,7 @@ function App() {
         <h1 className="App__title">
           SPLI<br/>TTER
         </h1>
+        <Calculator/>
     </div>
   );
 }

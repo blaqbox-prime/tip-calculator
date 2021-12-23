@@ -1,0 +1,129 @@
+.calculator{
+    min-height: 100px;
+    padding: 2rem ;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    text-align: left;
+}
+
+/* Bill  */
+
+label{
+    color: var(--very-dark-cyan);
+    display: block;
+    margin-bottom: .5rem;
+}
+
+.form-group{
+    display: block;
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.input-container{
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    background-color: var(--whitish-cyan);
+    padding: .5rem;
+}
+
+input[type="text"],input[type="number"]{
+    margin-left: 1rem;
+    text-align: right;
+    padding-right: .5rem;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: var(--very-dark-cyan);
+    -moz-appearance: textfield;
+    font-weight: 700;
+    font-family: 'Space Mono', sans-serif;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Tip Selector */
+
+.tip-percentages{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 1.5rem;
+}
+
+.tip-perc{
+    border-radius: .35rem;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#customTip{
+    width: 100%;
+}
+
+.tip-perc:last-child{
+    background-color: var(--whitish-cyan);
+    color: var(--very-dark-cyan);
+}
+
+.tip-perc:hover, .tip-perc.active{
+    background-color: var(--strong-cyan);
+    color: var(--very-dark-cyan);
+}
+
+/* Results */
+
+.Results{
+    padding: 1.5rem;
+    border-radius: .8rem;
+}
+
+.results__row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.Results h2{
+    font-size: 1rem;
+    line-height: 1rem;
+}
+
+.Results h1{
+    color: var(--strong-cyan);
+}
+
+
+
+.Results .subtext{
+    font-size: .8rem;
+    color: var(--grayish-cyan);
+}
+
+.btn-reset{
+    display: block;
+    width: 100%;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--very-dark-cyan);
+    background-color: var(--strong-cyan);
+    padding: 1rem 0;
+    border-radius: .4rem;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    margin-top: 3rem;
+    cursor: pointer;
+}
+

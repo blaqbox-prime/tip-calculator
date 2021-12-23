@@ -4,7 +4,7 @@
   --dark-grayish-cyan: hsl(186, 14%, 43%);
   --grayish-cyan: hsl(184, 14%, 56%);
   --light-grayish-cyan: hsl(185, 41%, 84%);
-  --light-whitish-cyan: hsl(189, 41%, 97%);
+  --whitish-cyan: hsl(189, 41%, 97%);
 }
 
 * {
@@ -20,7 +20,7 @@ body {
 }
 
 .bg-dark {
-  background-color: var(--dark-grayish-cyan);
+  background-color: var(--very-dark-cyan);
 }
 
 .bg-primary {
@@ -29,6 +29,10 @@ body {
 
 .bg-light {
   background-color: var(--light-grayish-cyan);
+}
+
+.bg-white{
+  background-color: #fff;
 }
 
 input{
