@@ -13,14 +13,14 @@ function Calculator() {
     const [total, setTotal] = useState(0);
 
     useEffect(() => {
-            calculateTip(); 
+        if(people > 0)
+            {calculateTip();} 
     }, [bill,tipPercentage,people])
 
 
     // Calculate Tip
     function calculateTip(){
         let total = (((tipPercentage/100)*bill) + Number(bill)) / Number(people);
-        // let total = (bill + ((tipPercentage/100)* bill && bill > 0 ? bill :  0)) / people && people > 0 ? people : 0; 
         let tipAmount = ((tipPercentage/100)*bill)/ Number(people);
 
         setTotal(total.toFixed(2));
@@ -35,13 +35,11 @@ function Calculator() {
     // set number of people
     function updatePeople(number){
     setPeople(number);
-    calculateTip();
     }
     
     //  set tip percentage
     function updateTipPercentage(percentage){
         setTipPercentage(percentage);
-        calculateTip();
         console.log(`Tip: ${tipPercentage}`);
     }
 
@@ -56,10 +54,12 @@ function Calculator() {
 
     return (
         <div className='calculator bg-white'>
-            <Bill amount={bill} changeBillAmount={updateBill}/>
-            <TipSelector percentage={tipPercentage} changeTipPercentage={updateTipPercentage}/>
-            <People people={people} changeNumPeople={updatePeople}/>
-            <Results tipAmount={tipAmount} total={total} reset={resetCalculator}/>
+            <div className="left">
+                <Bill amount={bill} changeBillAmount={updateBill}/>
+                <TipSelector percentage={tipPercentage} changeTipPercentage={updateTipPercentage}/>
+                <People people={people} changeNumPeople={updatePeople}/>
+            </div>
+            <Results tipAmount={tipAmount} total={total} reset={resetCalculator} className="right"/>
         </div>
     )
 }

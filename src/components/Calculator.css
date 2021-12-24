@@ -26,6 +26,12 @@ label{
     display: flex;
     background-color: var(--whitish-cyan);
     padding: .5rem;
+    border: 3px solid transparent;
+}
+
+.input-container.active{
+    border: 3px solid var(--dark-grayish-cyan);
+    border-radius: 5px;
 }
 
 input[type="text"],input[type="number"]{
@@ -67,18 +73,23 @@ input::-webkit-inner-spin-button {
     cursor: pointer;
 }
 
-#customTip{
+#customTip-input{
     width: 100%;
 }
 
-.tip-perc:last-child{
+
+.tip-perc:last-child, .tip-perc:last-child.active{
     background-color: var(--whitish-cyan);
     color: var(--very-dark-cyan);
 }
 
-.tip-perc:hover, .tip-perc.active{
+.tip-perc.active{
     background-color: var(--strong-cyan);
     color: var(--very-dark-cyan);
+}
+.tip-perc:hover{
+    color: var(--very-dark-cyan);
+    background-color: var(--light-grayish-cyan);
 }
 
 /* Results */
@@ -88,7 +99,13 @@ input::-webkit-inner-spin-button {
     border-radius: .8rem;
 }
 
-.results__row{
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Results__row{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -127,3 +144,43 @@ input::-webkit-inner-spin-button {
     cursor: pointer;
 }
 
+p.error{
+    color: hsl(0, 100%, 64%);
+}
+
+div.error{
+    border: 3px solid hsl(0, 100%, 64%);
+    border-radius: 5px;
+}
+
+
+/* Desktop Design */
+@media only screen and (min-width: 960px){
+    .calculator{
+        min-height: 100px;
+        height: 480px;
+        width: 920px;
+        padding: 2rem;
+        border-radius: 2rem;
+        text-align: left;
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .tip-percentages{
+        grid-template-columns: repeat(3, 1fr);
+        margin-bottom: 2rem;
+    }
+    
+    .form-group{
+        margin-bottom: 2rem;
+    }
+
+    .Results{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding:2rem
+    }
+}
