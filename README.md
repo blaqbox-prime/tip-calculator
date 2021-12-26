@@ -37,7 +37,7 @@ Users should be able to:
 
 - Solution URL: [https://github.com/blaqbox-prime/tip-calculator](https://github.com/blaqbox-prime/tip-calculator)
 
-- Live Site URL: [https://tip-calculator-fem.herokuapp.com/](https://tip-calculator-fem.herokuapp.com/)
+- Live Site URL: [https://react-tip-calculator.web.app/](https://react-tip-calculator.web.app//)
 
 ## My process
 I start off with creating color variables in the document root. Then creating the css classes for text colors and background colors. I then analyze the design and chopped it into sections (top and bottom) then split those sections furthur into smaller content containers and start writing the css for those containers as closely as possible to the design. After going as far as I can with the styling I then write the HTML with the classes I've already created. From there everything is adjusted as the HTML is written.
