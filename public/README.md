@@ -5,6 +5,7 @@ This is a solution to the [Tip calculator app challenge on Frontend Mentor](http
 ## Table of contents
 
 
+
 - [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
@@ -27,10 +28,10 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshots/desktop.png)
-![](./screenshots/mobile.png)
-![](./screenshots/errorstate.png)
-![](./screenshots/customtip.png)
+![](./public/screenshots/desktop.png)
+![](./public/screenshots/mobile.png)
+![](./public/screenshots/errorstate.png)
+![](./public/screenshots/customtip.png)
 
 
 ### Links
