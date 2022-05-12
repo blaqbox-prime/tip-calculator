@@ -28,10 +28,10 @@ Users should be able to:
 
 ### Screenshot
 
-![](./public/screenshots/desktop.png)
-![](./public/screenshots/mobile.png)
-![](./public/screenshots/errorstate.png)
-![](./public/screenshots/customtip.png)
+![](/public/screenshots/desktop.png)
+![](/public/screenshots/mobile.png)
+![](/public/screenshots/errorstate.png)
+![](/public/screenshots/customtip.png)
 
 
 ### Links
